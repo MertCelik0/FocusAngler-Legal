@@ -65,6 +65,7 @@
 <p>When you open or join a room with a 6-digit code, the following is written to the <strong>public</strong> CloudKit database of Focus Angler so the people in the room can see it: a random identifier made on your device (not linked to your Apple Account), the room code, the name you typed, your angler, companion, rod and art style, whether you are focusing, paused, on a break or idle, when your focus began and ends, today's focus minutes and fish count, the kind of your latest fish and when you caught it, and, if you opened the room, the place, season and time of day you chose.</p>
 <p>Anyone who knows the room code can see this. We, as the developer, can also read the public database, and only use that to keep rooms working and to act on misuse. When you leave the room (or erase your data) your record is deleted; records older than 12 hours are no longer shown. When a friend casts, you get a notice through Apple's CloudKit and Push services.</p>
 <p>Please don't put your real full name or other personal details in your name.</p>
+<p><strong>Reporting and blocking.</strong> Each person's row in a room has a flag. If you report someone, a report record is written to the public CloudKit database that only we can read: the room code, the reported person's random identifier and name, your random identifier and the time. If you block someone, their random identifier is kept on your device only, and they are no longer shown to you in any room.</p>
 <p>Purpose: shared focus with friends. Legal basis: performance of our agreement with you; our legitimate interest in preventing misuse.</p>
 <h2>5. SharePlay (optional)</h2>
 <p>If you fish together in a FaceTime call, the same room information as above is sent to the other people in the call through Apple's SharePlay. It is not stored by us and disappears when the session ends.</p>
@@ -93,7 +94,7 @@
 <li>No location, contacts, photos, camera or microphone access.</li>
 <li>No selling or sharing of personal information for advertising ("sale" or "sharing" as U.S. state laws define them).</li>
 </ul>
-<p>The App's privacy manifest (PrivacyInfo.xcprivacy) and its App Store privacy label match this policy: no tracking, and the only data collected is what a friend room shows (the name you type and your room activity, section 4), used only to run that feature and not linked to your identity.</p>
+<p>The App's privacy manifest (PrivacyInfo.xcprivacy) and its App Store privacy label match this policy: no tracking, and the only data collected is what a friend room holds (the name you type, a random identifier made on your device, your room activity and any reports, section 4), used only to run that feature and not linked to your identity.</p>
 <h2>14. Who sees your information</h2>
 <ul>
 <li><strong>People in your room or SharePlay call</strong>: what is listed in sections 4 and 5.</li>
@@ -105,6 +106,8 @@
 <ul>
 <li>On your device and in your private iCloud: until you delete it, erase it in the App, or remove the App (iCloud copies follow your iCloud settings).</li>
 <li>Friend room records: until you leave the room or erase your data; they stop being shown after 12 hours.</li>
+<li>Reports: as long as needed to review them and to prevent repeated misuse, then deleted.</li>
+<li>The people you blocked: on your device, until you erase your data.</li>
 <li>Game Center, Health and Calendar entries: in those Apple apps, until you remove them there.</li>
 </ul>
 <h2>16. Deleting your data</h2>
